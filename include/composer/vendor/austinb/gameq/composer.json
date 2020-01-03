@@ -1,0 +1,71 @@
+{
+  "name": "austinb/gameq",
+  "description": "GameQ Gameserver Library",
+  "keywords": ["gameq","serverstatus"],
+  "version": "v3.0.14",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Austin Bischoff",
+      "email": "austin.bischoff@gmail.com",
+      "role": "Packagist/Composer Maintainer, Developer",
+      "homepage": "https://github.com/Austinb"
+    },
+    {
+      "name": "Christoph Kretzschmar",
+      "email": "blackskyliner@googlemail.com",
+      "role": "Developer",
+      "homepage": "https://github.com/Blackskyliner"
+    },
+    {
+      "name": "Marcel Bößendörfer",
+      "email": "m.boessendoerfer@marbis.net",
+      "role": "Developer",
+      "homepage": "https://github.com/nitrado"
+    },
+    {
+      "name": "Alexander Hambalgo",
+      "role": "Developer",
+      "homepage": "http://balgo.users.sourceforge.net/"
+    },
+    {
+      "name": "Holger",
+      "role": "Developer",
+      "homepage": "http://icet33.users.sourceforge.net/"
+    },
+    {
+      "name": "Sebastian Weidenbach",
+      "role": "Developer",
+      "homepage": "http://sebastianwe.users.sourceforge.net/"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/Austinb/GameQ/v3",
+    "issues": "https://github.com/Austinb/GameQ/issues",
+    "wiki": "https://github.com/Austinb/GameQ/wiki"
+  },
+  "require": {
+    "php": ">=5.4.14",
+    "ext-bz2": "*",
+    "ext-xml": "*"
+  },
+  "require-dev": {
+    "ext-curl": "*",
+    "phpunit/phpunit": "^4.8 || ^6.0",
+    "phpunit/php-invoker": "*",
+    "phpmd/phpmd" : "@stable",
+    "squizlabs/php_codesniffer": "3.*@stable",
+    "satooshi/php-coveralls": "~1.0",
+    "corneltek/getoptionkit": "~2"
+  },
+  "autoload": {
+    "psr-4": {
+      "GameQ\\": "src/GameQ/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GameQ\\Tests\\": "tests"
+    }
+  }
+}

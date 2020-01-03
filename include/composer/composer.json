@@ -1,0 +1,11 @@
+{
+    "name": "AutoSpeak/bot-on-ts3-server",
+    "description": "Bot for your TS3 server",
+    "require": {
+        "php": "~7.1",
+		"ext-curl": "*",
+		"ext-mysqli": "*",
+        "stichoza/google-translate-php": "~3.2",
+		"austinb/gameq": "~3.0"
+    }
+}

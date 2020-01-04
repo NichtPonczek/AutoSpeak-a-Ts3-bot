@@ -255,7 +255,6 @@ elif [[ "$1" == "install" ]]; then
 	sudo a2enmod php$php_ver
 	service apache2 restart
 	
-	install_ioncube
 	
 	write " Potrzebne pakiety zostały zainstalowane" "$COL_GREEN"
 	

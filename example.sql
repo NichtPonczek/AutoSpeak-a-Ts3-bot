@@ -30,28 +30,31 @@ CREATE TABLE `actions` (
 
 
 CREATE TABLE `clients` (
-  `client_dbid` bigint(255) NOT NULL,
-  `client_clid` bigint(11) NOT NULL,
-  `client_nick` text CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
-  `last_nicks` longtext CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
-  `client_uid` text CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
-  `server_groups` longtext CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
-  `connections` bigint(200) NOT NULL,
-  `connected_time` bigint(255) NOT NULL DEFAULT '0',
+  `client_dbid` int(255) NOT NULL,
+  `client_clid` int(11) NOT NULL,
+  `client_nick` text COLLATE utf8_polish_ci NOT NULL,
+  `last_nicks` longtext COLLATE utf8_polish_ci NOT NULL,
+  `client_uid` text CHARACTER SET latin1 NOT NULL,
+  `server_groups` longtext COLLATE utf8_polish_ci NOT NULL,
+  `connections` int(11) NOT NULL,
+  `connected_time` int(11) NOT NULL DEFAULT '0',
   `connected_time_record` bigint(255) NOT NULL,
   `idle_time_record` bigint(255) NOT NULL,
   `time_spent` bigint(255) NOT NULL,
   `idle_time_spent` bigint(255) NOT NULL,
-  `week_start` int(11) DEFAULT NULL,
-  `week_start_time` int(255) UNSIGNED NOT NULL,
+  `week_start` blob NOT NULL,
+  `week_start_time` int(255) NOT NULL,
   `banner_clock` int(11) NOT NULL DEFAULT '1',
   `banner_additional` int(11) NOT NULL DEFAULT '1',
   `banner_online` int(11) NOT NULL DEFAULT '1',
   `banner_admins` int(11) NOT NULL DEFAULT '1',
   `banner_date` int(11) NOT NULL DEFAULT '1',
   `banner_weather` int(11) NOT NULL DEFAULT '1',
-  `banner_bg` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+  `banner_bg` int(11) NOT NULL DEFAULT '0',
+  `connection_client_ip` varchar(255) COLLATE utf8_polish_ci DEFAULT NULL,
+  `client_version` varchar(255) COLLATE utf8_polish_ci DEFAULT NULL,
+  `client_lastconnected` varchar(255) COLLATE utf8_polish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci ROW_FORMAT=DYNAMIC;
 
 CREATE TABLE `new_daily_users` (
   `client_dbid` int(255) NOT NULL,

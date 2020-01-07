@@ -44,7 +44,7 @@ class client_to_db
 		if($result->rowCount() == 0)
 		{			
 			$query_sql->exec("INSERT INTO `clients` 
-			(`client_dbid`, `client_clid`, `client_nick`, `client_uid`, `server_groups`, `connections`, `connected_time`, `connected_time_record`, `idle_time_record`, `time_spent`, `idle_time_spent`, `week_start`, `week_start_time`, `last_nicks`, `connection_client_ip`, `client_version`, 'client_lastconnected', ) VALUES ('$cldbid', '$clid', '$nick', '$uid', '$server_groups', '$connections','$connected_time', '$idle_time', '$connected_time', '$connected_time', '$idle_time', '$connection_client_ip', '$client_version', '`$client_lastconnected`,' '".date('W')."', 0, '')");
+			(`client_dbid`, `client_clid`, `client_nick`, `client_uid`, `server_groups`, `connections`, `connected_time`, `connected_time_record`, `idle_time_record`, `time_spent`, `idle_time_spent`, `week_start`, `week_start_time`, `last_nicks`, `connection_client_ip`, `client_version`, `client_lastconnected`) VALUES ('$cldbid', '$clid', '$nick', '$uid', '$server_groups', '$connections','$connected_time', '$idle_time', '$connected_time', '$connected_time', '$idle_time', '$connection_client_ip', '$client_version', '$client_lastconnected', '".date('W')."', 0, '')");
 		}
 		else
 		{

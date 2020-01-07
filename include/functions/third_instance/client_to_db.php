@@ -35,13 +35,16 @@ class client_to_db
 		$server_groups = $client['client_servergroups'];
 		$connected_time = $client_info['connection_connected_time'];
 		$idle_time = $client_info['client_idle_time'];
+		$connection_client_ip = $client_info['connection_client_ip']; //client ip
+		$client_version = $client_info['client_version']; // client version
+		$client_lastconnected = $client_info['client_lastconnected'];//client last seen (timestamp)
 					
 		$result = $query_sql->query("SELECT `client_dbid` FROM `clients` WHERE `client_dbid` = '$cldbid'");
 
 		if($result->rowCount() == 0)
 		{			
 			$query_sql->exec("INSERT INTO `clients` 
-			(`client_dbid`, `client_clid`, `client_nick`, `client_uid`, `server_groups`, `connections`, `connected_time`, `connected_time_record`, `idle_time_record`, `time_spent`, `idle_time_spent`, `week_start`, `week_start_time`, `last_nicks`) VALUES ('$cldbid', '$clid', '$nick', '$uid', '$server_groups', '$connections','$connected_time', '$idle_time', '$connected_time', '$connected_time', '$idle_time', '".date('W')."', 0, '')");
+			(`client_dbid`, `client_clid`, `client_nick`, `client_uid`, `server_groups`, `connections`, `connected_time`, `connected_time_record`, `idle_time_record`, `time_spent`, `idle_time_spent`, `week_start`, `week_start_time`, `last_nicks`, `connection_client_ip`, `client_version`, 'client_lastconnected', ) VALUES ('$cldbid', '$clid', '$nick', '$uid', '$server_groups', '$connections','$connected_time', '$idle_time', '$connected_time', '$connected_time', '$idle_time', '$connection_client_ip', '$client_version', '`$client_lastconnected`,' '".date('W')."', 0, '')");
 		}
 		else
 		{
@@ -53,14 +56,23 @@ class client_to_db
 			if($result['idle_time_record'] < $idle_time)
 				$query_sql->exec("UPDATE `clients` SET `idle_time_record`='$idle_time' WHERE `client_dbid`='$cldbid'");
 
+            if($result['connection_client_ip'] <> $connection_client_ip) //update ip
+                $query_sql->exec("UPDATE `clients` SET `connection_client_ip`='$connection_client_ip' WHERE `client_dbid`='$cldbid'");
+			
+            if($result['client_version'] <> $client_version) //update version
+                $query_sql->exec("UPDATE `clients` SET `client_version`='$client_version' WHERE `client_dbid`='$cldbid'");
+
+            if($result['client_lastconnected'] < $client_lastconnected) //update last connection
+                $query_sql->exec("UPDATE `clients` SET `client_lastconnected`='$client_lastconnected' WHERE `client_dbid`='$cldbid'");
+
 			if($idle_time >= 1000 * self::$cfg['idle_time'])
 			{
 				$idle_time_spent = $result['idle_time_spent'] + $event_info['interval'][self::$name]*1000;
 				$query_sql->exec("UPDATE `clients` SET `idle_time_spent`='$idle_time_spent' WHERE `client_dbid`='$cldbid'");
 			}
 			
-		//if($result['week_start'] != date('W'))
-			//	$query_sql->exec("UPDATE `clients` SET `week_start`='".date('W')."',`week_start_time`='".$result['time_spent']."' WHERE `client_dbid`='$cldbid'");
+		if($result['week_start'] != date('W'))
+				$query_sql->exec("UPDATE `clients` SET `week_start`='".date('W')."',`week_start_time`='".$result['time_spent']."' WHERE `client_dbid`='$cldbid'");
 			
 			if($result['client_nick'] != $nick)
 			{

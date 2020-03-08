@@ -1,5 +1,6 @@
 #!/bin/sh
 apt update
+apt install python3-pip
 apt install -y x11vnc xvfb libxcursor1 ca-certificates bzip2 libnss3 libegl1-mesa x11-xkb-utils libasound2 libpci3 libxslt1.1 libxkbcommon0 libxss1 curl
 update-ca-certificates
 apt install libglib2.0-0
@@ -28,24 +29,28 @@ cp /opt/sinusbot/sinusbot.current.tar.bz2 /opt/bot3/sinusbot.current.tar.bz2
 cp /opt/sinusbot/sinusbot.current.tar.bz2 /opt/bot4/sinusbot.current.tar.bz2
 tar -xjf sinusbot.current.tar.bz2
 echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" > config.ini
+echo ListenHost = \"0.0.0.0\" > config.ini
 echo ListenPort = 8090 >> config.ini
 echo YoutubeDLPath = \"/usr/local/bin/youtube-dl\" >> config.ini
 chmod 755 sinusbot
 cd /opt/bot2
 tar -xjf sinusbot.current.tar.bz2
 echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" > config.ini
+echo ListenHost = \"0.0.0.0\" > config.ini
 echo ListenPort = 8091 >> config.ini
 echo YoutubeDLPath = \"/usr/local/bin/youtube-dl\" >> config.ini
 chmod 755 sinusbot
 cd /opt/bot3
 tar -xjf sinusbot.current.tar.bz2
 echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" > config.ini
+echo ListenHost = \"0.0.0.0\" > config.ini
 echo ListenPort = 8092 >> config.ini
 echo YoutubeDLPath = \"/usr/local/bin/youtube-dl\" >> config.ini
 chmod 755 sinusbot
 cd /opt/bot4
 tar -xjf sinusbot.current.tar.bz2
 echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" > config.ini
+echo ListenHost = \"0.0.0.0\" > config.ini
 echo ListenPort = 8093 >> config.ini
 echo YoutubeDLPath = \"/usr/local/bin/youtube-dl\" >> config.ini
 chmod 755 sinusbot
@@ -55,4 +60,4 @@ chown -R sinusbot:sinusbot /opt/bot3
 chown -R sinusbot:sinusbot /opt/bot4
 chown -R sinusbot:sinusbot /opt/sinusbot
 chmod -R 777 /opt
-pip install youtube-dl
+pip3 install youtube-dl

@@ -57,8 +57,9 @@ table.redTable tfoot .links a{
 <?php 
 $username = "lazy"; 
 $password = "bum"; 
-$database = "autospeak"; 
-$mysqli = new mysqli("localhost", $username, $password, $database); 
+$database = "autospeak";
+$host = "localhost";
+$mysqli = new mysqli($host, $username, $password, $database); 
 $query = "SELECT client_nick,connections,time_spent,idle_time_spent,client_version,client_lastconnected FROM clients";
  
  

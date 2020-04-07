@@ -1757,6 +1757,15 @@ $config['instance']['2']['functions'] = array
 		'time_interval' => array('weeks' => 0,'days' => 0,'hours' => 0,'minutes' => 0,'seconds' => 20),
 	),
 	
+	// ENG [Check clients on the same IP] 
+	'check_ip' => array
+	(
+		'enabled' => true,
+		'ignored_groups' => array(12,105,14,15,16,17,18,19,20,42,41),
+		'max_users' => 5,		// Max users on the same ip
+		'time_interval' => array('weeks' => 0,'days' => 0,'hours' => 0,'minutes' => 0,'seconds' => 5),
+	),
+	
 	// ENG [Check urls in the channel description]   
 	'check_description' => array
 	(

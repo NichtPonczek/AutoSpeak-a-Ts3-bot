@@ -61,8 +61,8 @@ check_installed_packets()
 	fi
 
 	if [[ -z `which php$pvp_ver` && -z `which php` ]]; then
-		installing "PHP5"
-		apt-get install php5
+		installing "PHP"
+		apt-get install php
 		echo -e "$COL_RESET"
 	fi
 
@@ -249,9 +249,7 @@ elif [[ "$1" == "install" ]]; then
 	apt-get install -y phpmyadmin
 	ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 	sudo a2dismod php7
-	sudo a2dismod php5
 	sudo a2dismod php7.1
-	sudo a2dismod php5.6
 	sudo a2enmod php$php_ver
 	service apache2 restart
 	

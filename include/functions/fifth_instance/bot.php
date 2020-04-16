@@ -23,7 +23,7 @@ class bot
 
 	static public function main($info)
 	{
-		global $query, $kakadu, $language, $all_instances;		
+		global $query, $AutoSpeak, $language, $all_instances;		
 
 		$instance = $info['parameters'][0][1];
 
@@ -37,8 +37,8 @@ class bot
 		
 		if($instance != "all")
 		{
-			shell_exec("screen -S kakadu_instance_".$instance." -X quit");
-			shell_exec("screen -dmS kakadu_instance_".$instance." php core.php -i ".$instance);
+			shell_exec("screen -S AutoSpeak_instance_".$instance." -X quit");
+			shell_exec("screen -dmS AutoSpeak_instance_".$instance." php core.php -i ".$instance);
 		}
 		else
 			shell_exec("./starter.sh restart");

@@ -88,7 +88,7 @@ class admin
 
 	static public function main($info)
 	{
-		global $query, $query_sql, $language, $kakadu;
+		global $query, $query_sql, $language, $AutoSpeak;
 	
 		$lang = $language['command']['admin'];
 		$msg = '';
@@ -99,7 +99,7 @@ class admin
 		{
 			$result = $result->fetch(PDO::FETCH_ASSOC);
 
-			if($kakadu::has_group($result['server_groups'], self::$cfg['admins_groups']))
+			if($AutoSpeak::has_group($result['server_groups'], self::$cfg['admins_groups']))
 			{
 				$stats = $query_sql->query("SELECT * FROM `statistics` WHERE `dbid`='".$info['parameters'][0][1]."'");
 				$stats = $stats->fetch(PDO::FETCH_ASSOC);

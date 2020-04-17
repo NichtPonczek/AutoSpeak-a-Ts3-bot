@@ -72,7 +72,7 @@ class socialspy
 
 	static public function main($info)
 	{
-		global $query, $query_sql, $language, $kakadu;
+		global $query, $query_sql, $language, $AutoSpeak;
 	
 		$lang = $language['command']['socialspy'];
 		$msg = '';

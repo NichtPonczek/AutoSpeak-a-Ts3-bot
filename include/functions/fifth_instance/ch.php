@@ -83,7 +83,7 @@ class ch
 
 						$data = date('d-m-Y');
 						$desc_main = "[center][size=15][b]".$lang['private_channel'].$number.$lang['not_empty']."[/b][/size][/center]\n";
-						$desc_main .= "[left][img]https://pgup.eu/kakadu/efy87mj.png[/img] ● [size=11][b]".$lang['owner']."[URL=client://2/".$client['client_unique_identifier']."]".$client['client_nickname']."[/url][/b][/size][/left][left][img]https://pgup.eu/kakadu/uoiJnCi.png[/img] ● [size=11][b]".$lang['created']."".$data."\n[/b][/size][/left]\n".$language['function']['down_desc'];
+						$desc_main .= "[left] ● [size=11][b]".$lang['owner']."[URL=client://2/".$client['client_unique_identifier']."]".$client['client_nickname']."[/url][/b][/size][/left][left] ● [size=11][b]".$lang['created']."".$data."\n[/b][/size][/left]\n".$language['function']['down_desc'];
 
 						if(strlen($client['client_nickname']) >=20 )
 							$name = $number.". ".$language['function']['get_private_channel']['channel_name'];

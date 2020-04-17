@@ -23,7 +23,7 @@ class gsecurity
 
 	static public function main($info)
 	{
-		global $query, $language, $kakadu, $cfg;
+		global $query, $language, $AutoSpeak, $cfg;
 	
 		$lang = $language['command']['gsecurity'];
 		$msg = '';

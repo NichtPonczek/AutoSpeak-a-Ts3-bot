@@ -1080,6 +1080,18 @@ $config['instance']['1']['functions'] = array
 		'time_interval' => array('weeks' => 0,'days' => 0,'hours' => 0,'minutes' => 0,'seconds' => 5),
 	),
 	
+		'AutoSpeak_info' => array	//Checking on the server every 15 minutes
+	(
+		'enabled' => false, 	
+		'channel_id' => 952,	
+		'translate' => array
+		(
+			'enabled' => false,
+			'target_language' => 'en',	// Type language code https://cloud.google.com/translate/docs/languages
+		),
+		'time_interval' => array('weeks' => 0,'days' => 0,'hours' => 0,'minutes' => 0,'seconds' => 30),
+	),
+	
 	// ENG [Get YT channel] 
 	'get_yt_channel' => array	// Db must be on
 	(

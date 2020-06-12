@@ -267,11 +267,11 @@
 	
 	$language['function']['check_ip'] = "Max [NUMBER] accounts on the same IP!";
 	
-	$language['function']['kakadu_info']['instances_info'] = "Informations about AutoSpeak's instances";
-	$language['function']['kakadu_info']['instance'] = "Instance";
-	$language['function']['kakadu_info']['no_info'] = "no data";
-	$language['function']['kakadu_info']['total_ram'] = "Total RAM usage";
-	$language['function']['kakadu_info']['info_from_server'] = "Informations from AutoSpeak's server";
+	$language['function']['AutoSpeak_info']['instances_info'] = "Informations about AutoSpeak's instances";
+	$language['function']['AutoSpeak_info']['instance'] = "Instance";
+	$language['function']['AutoSpeak_info']['no_info'] = "no data";
+	$language['function']['AutoSpeak_info']['total_ram'] = "Total RAM usage";
+	$language['function']['AutoSpeak_info']['info_from_server'] = "Informations from AutoSpeak's server";
 	
 	$language['function']['check_description']['header'] = "Suspicious links detected";
 	$language['function']['check_description']['bad_link'] = "[b][color=red]Wrong link[/color] (by AutoSpeak)[/b]";

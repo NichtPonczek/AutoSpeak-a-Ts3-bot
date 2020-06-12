@@ -225,9 +225,9 @@
 	$language['function']['random_group']['desc'] = 'wylosował/a rangę:';
 	$language['function']['random_group']['day'] = 'dnia';
 
-	$language['function']['write_statistics']['groups'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center]\n[b][size=10]Grupy normalne:[/size][/b][left]● [img]http://i.imgur.com/80Z4ZbB.png[/img] W dniu dzisiejszym: [B][today].[/B]\n● [img]http://i.imgur.com/n8rPmWJ.png[/img] W tym tygodniu: [B][weekly].[/B]\n● [img]http://i.imgur.com/RtHhpjF.png[/img] W tym miesiącu: [B][monthly].[/B]\n● [img]http://i.imgur.com/bB82GO3.png[/img]  Ilość wszystkich nadanych grup: [B][total].[/B][/left]\n[b][size=10]Grupy rejestracyjne:[/size][/b][left]  [img]http://i.imgur.com/FzkNey3.png[/img] W dniu dzisiejszym: [B][reg_today].[/B]\n [img]http://i.imgur.com/Jha3T63.png[/img] W tym tygodniu: [B][reg_weekly].[/B]\n [img]http://i.imgur.com/WTnT6ut.png[/img] W tym miesiącu: [B][reg_monthly].[/B]\n [img]http://i.imgur.com/bB82GO3.png[/img]  Ilość wszystkich nadanych grup: [B][reg_total].[/B][/left]';
-	$language['function']['write_statistics']['time_spent'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center][b][size=10] Spędzony czas: [/size][/b]\n\n[img]http://i.imgur.com/zljuiR9.png[/img] [size=9]W dniu dzisiejszym: [B][today][/B] w tym [B][off_today][/B] jako niedostępny.[/size]\n[img]http://i.imgur.com/JQAg1B6.png[/img] [size=9]W obecnym tygodniu: [B][weekly][/B] w tym [B][off_weekly][/B] jako niedostępny.[/size]\n[img]http://i.imgur.com/ZHo8aRW.png[/img] [size=9]W obecnym miesiącu: [B][monthly][/B] w tym [B][off_monthly][/B] jako niedostępny.[/size]\n[img]http://i.imgur.com/vklICen.png[/img] [size=9]Łączny spędzony czas: [B][total][/B] w tym [B][off_total][/B] jako niedostępny[/size]';
-	$language['function']['write_statistics']['help_center'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center]\n[b][size=10]Ilość udzielonej pomocy:[/size][/b][left]● [img]http://i.imgur.com/80Z4ZbB.png[/img] W dniu dzisiejszym: [B][today_count].[/B]\n● [img]http://i.imgur.com/n8rPmWJ.png[/img] W tym tygodniu: [B][weekly_count].[/B]\n● [img]http://i.imgur.com/RtHhpjF.png[/img] W tym miesiącu: [B][monthly_count].[/B]\n● [img]http://i.imgur.com/bB82GO3.png[/img]  Ilość wszystkich osób: [B][total_count].[/B][/left]\n[b][size=10]Czas pomocy:[/size][/b][left]  [img]https://i.imgur.com/dJPr2gV.png[/img] W dniu dzisiejszym: [B][today_time].[/B]\n [img]https://i.imgur.com/gvCYkV6.png[/img] W tym tygodniu: [B][weekly_time].[/B]\n [img]http://i.imgur.com/WTnT6ut.png[/img] W tym miesiącu: [B][monthly_time].[/B]\n [img]http://i.imgur.com/bB82GO3.png[/img]  Całkowity czas pomocy: [B][total_time].[/B][/left]';
+	$language['function']['write_statistics']['groups'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center]\n[b][size=10]Grupy normalne:[/size][/b][left]●  W dniu dzisiejszym: [B][today].[/B]\n● W tym tygodniu: [B][weekly].[/B]\n●  W tym miesiącu: [B][monthly].[/B]\n●   Ilość wszystkich nadanych grup: [B][total].[/B][/left]\n[b][size=10]Grupy rejestracyjne:[/size][/b][left]  W dniu dzisiejszym: [B][reg_today].[/B]\n  W tym tygodniu: [B][reg_weekly].[/B]\n W tym miesiącu: [B][reg_monthly].[/B]\n Ilość wszystkich nadanych grup: [B][reg_total].[/B][/left]';
+	$language['function']['write_statistics']['time_spent'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center][b][size=10] Spędzony czas: [/size][/b]\n\n [size=9]W dniu dzisiejszym: [B][today][/B] w tym [B][off_today][/B] jako niedostępny.[/size]\n [size=9]W obecnym tygodniu: [B][weekly][/B] w tym [B][off_weekly][/B] jako niedostępny.[/size]\n [size=9]W obecnym miesiącu: [B][monthly][/B] w tym [B][off_monthly][/B] jako niedostępny.[/size]\n [size=9]Łączny spędzony czas: [B][total][/B] w tym [B][off_total][/B] jako niedostępny[/size]';
+	$language['function']['write_statistics']['help_center'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center]\n[b][size=10]Ilość udzielonej pomocy:[/size][/b][left]●  W dniu dzisiejszym: [B][today_count].[/B]\n●  W tym tygodniu: [B][weekly_count].[/B]\n●  W tym miesiącu: [B][monthly_count].[/B]\n● Ilość wszystkich osób: [B][total_count].[/B][/left]\n[b][size=10]Czas pomocy:[/size][/b][left] W dniu dzisiejszym: [B][today_time].[/B]\n W tym tygodniu: [B][weekly_time].[/B]\n W tym miesiącu: [B][monthly_time].[/B]\n Całkowity czas pomocy: [B][total_time].[/B][/left]';
 	
 
 	$language['function']['facebook_posts']['header'] = 'Lista postów z naszego';
@@ -274,11 +274,11 @@
 	
 	$language['function']['check_ip'] = "Przekroczono limit [NUMBER] kont na jednym IP!";
 	
-	$language['function']['kakadu_info']['instances_info'] = "Informacje o instancjach Bocik";
-	$language['function']['kakadu_info']['instance'] = "Instancja";
-	$language['function']['kakadu_info']['no_info'] = "brak danych";
-	$language['function']['kakadu_info']['total_ram'] = "Całkowite zużycie RAM";
-	$language['function']['kakadu_info']['info_from_server'] = "Informacje z serwera Bocik";
+	$language['function']['AutoSpeak_info']['instances_info'] = "Informacje o instancjach Bocik";
+	$language['function']['AutoSpeak_info']['instance'] = "Instancja";
+	$language['function']['AutoSpeak_info']['no_info'] = "brak danych";
+	$language['function']['AutoSpeak_info']['total_ram'] = "Całkowite zużycie RAM";
+	$language['function']['AutoSpeak_info']['info_from_server'] = "Informacje z serwera Bocik";
 	
 	$language['function']['check_description']['header'] = "Wykryte podejrzane linki";
 	$language['function']['check_description']['bad_link'] = "[b][color=red]Niedozwolony link[/color][/b]";

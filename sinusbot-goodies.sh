@@ -1,4 +1,15 @@
 #!/bin/sh
+echo '
+################################WARNING#################################################
+# The TeamSpeak Client 3.3+ requires at least a Linux Kernel of version 3.17 or higher!#
+#When choosing a VPS (virtual private server), make sure that it is not based on OpenVZ#
+#because the Linux kernel will be too old.                                             #
+#Instead choose a KVM or LCX based VPS with a recent OS.                               #
+#This multi instance script should work with the recent debian & ubuntu distros        #
+#if something is not working please reffer to                                          #
+#https://sinusbot.github.io/docs/installation/linux/                                   #
+################################WARNING#################################################
+'
 #update
 apt update
 apt install python3-pip
@@ -89,3 +100,20 @@ chown -R sinusbot:sinusbot /opt/$bot4
 chown -R sinusbot:sinusbot /opt/sinusbot
 chmod -R 777 /opt
 #end
+echo '
+####################################################################################################
+#im done to use the multiport multi instance sinusbot                                              #
+#type su sinusbot                                                                                  #
+#after this command you might coppy && paste the following commands                                #
+#cd /opt/bot1 && screen -dms bot1 ./sinusbot --override-password easypass123                       #
+#cd /opt/bot2 && screen -dms bot2 ./sinusbot --override-password easypass123                       #
+#cd /opt/bot3 && screen -dms bot3 ./sinusbot --override-password easypass123                       #
+#cd /opt/bot4 && screen -dms bot4 ./sinusbot --override-password easypass123                       #
+#remember to replase easypass123 with your pass                                                    #
+#the pannels are accessible trough                                                                 #
+#yourmachineip:8090                                                                                #
+#yourmachineip:8091                                                                                #
+#yourmachineip:8091                                                                                #
+#yourmachineip:8091                                                                                #
+####################################################################################################
+'

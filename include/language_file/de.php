@@ -210,3 +210,213 @@
 		'invoker' => "Ban Schöpfer",
 		'date' => "Am Tag",
 	);
+
+	$language['function']['status_sinusbot']['in_group'] = 'Bots in Gruppe';
+	$language['function']['status_sinusbot']['is'] = 'ist';
+	$language['function']['status_sinusbot']['active'] = 'Aktiv';
+	$language['function']['status_sinusbot']['on_channel'] = 'befindet sich';
+	$language['function']['status_sinusbot']['for'] = 'zeit';	
+
+	$language['function']['random_group']['title'] = 'EListe zufälliger Gruppen';
+	$language['function']['random_group']['owner'] = 'Du hast gerade eine zufällige Gruppe erhalten: ';
+	$language['function']['random_group']['on_time'] = 'für:';
+	$language['function']['random_group']['cong'] = 'Herzliche Glückwünsche!';
+	$language['function']['random_group']['days'] = 'tage';
+	$language['function']['random_group']['desc'] = 'hat einen rang bekommen';
+	$language['function']['random_group']['day'] = 'am tag';
+
+	$language['function']['write_statistics']['groups'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center]\n[b][size=10]Normale Gruppen:[/size][/b][left]●  heute: [B][today].[/B]\n●  Diese Woche: [B][weekly].[/B]\n● Diesen Monat: [B][monthly].[/B]\n● Die Anzahl aller zugewiesenen Gruppen: [B][total].[/B][/left]\n[b][size=10]Registrierungsgruppen:[/size][/b][left] heute: [B][reg_today].[/B]\ Diese Woche: [B][reg_weekly].[/B]\n Diesen Monat: [B][reg_monthly].[/B]\n  Die Anzahl aller zugewiesenen Gruppen: [B][reg_total].[/B][/left]';
+	$language['function']['write_statistics']['time_spent'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center][b][size=10] Zeitaufwand: [/size][/b]\n\n[img] [size=9]heute: [B][today][/B] im dem [B][off_today][/B] als nicht verfügbar.[/size]\n [size=9]Diese Woche: [B][weekly][/B] im dem [B][off_weekly][/B] als nicht verfügbar.[/size]\n [size=9]Im laufenden Monat: [B][monthly][/B] im dem [B][off_monthly][/B] als nicht verfügbar.[/size]\n [size=9]Gesamt Zeitaufwand: [B][total][/B] im dem [B][off_total][/B] als nicht verfügbar[/size]';
+	$language['function']['write_statistics']['help_center'] = '[center][B][size=11][rang_name]:[/B] [size=11][client][/size][/center]\n[b][size=10]Umfang der geleisteten Unterstützung:[/size][/b][left]● heute: [B][today_count].[/B]\n● Diese Woche: [B][weekly_count].[/B]\n● Diesen Monat: [B][monthly_count].[/B]\n● Anzahl aller Personen: [B][total_count].[/B][/left]\n[b][size=10]Hilfezeit:[/size][/b][left]  heute: [B][today_time].[/B]\n Diese Woche: [B][weekly_time].[/B]\n Diesen Monat: [B][monthly_time].[/B]\n   Gesamt Hilfezeit: [B][total_time].[/B][/left]';
+	
+
+	$language['function']['facebook_posts']['header'] = 'Liste der Beiträge von uns';
+	$language['function']['facebook_posts']['written'] = 'Geschrieben:';
+
+	$language['function']['live_dj'] = "Kein";
+
+	$language['function']['event_records']['success'] = "Sie wurden erfolgreich aufgeschrieben!";
+	$language['function']['event_records']['failed'] = "Fehler beim aufschreiben. Vielleicht bist du schon auf der Liste?";
+
+	$language['function']['top_week_time'] = "zu Beförderung fehlt dir :";
+
+	$language['function']['levels']['next'] = "Herzliche Glückwünsche! Du wurdest zum Level [NAME] befördert. Sie brauchen [STUNDEN] Stunden bis zum nächsten Level.";
+	$language['function']['levels']['last'] = "Herzliche Glückwünsche! Du wurdest zum Level [NAME] befördert. Dies ist das letzte Level!";
+
+	$language['function']['delete_client_permissions'] = "Hallo, Berechtigungen für Ihren Client ([PERMS]) wurden gerade entfernt, da Sie sie nicht besitzen können.";
+	
+	$language['function']['get_server_group']['add'] = "Sie haben gerade eine VIP-Gruppe erhalten!";
+	$language['function']['get_server_group']['del'] = "Die VIP-Gruppe wurde gelöscht!";
+	
+	$language['function']['actions_logs']['groups_assigner'] = " wurde durch Eingabe des Kanals registriert.";
+	$language['function']['actions_logs']['auto_register'] = " wurde registriert, weil er genug Zeit auf dem Server verbracht hat.";
+	$language['function']['actions_logs']['block_recording'] = " wurde für die Aufnahme bestraft.";
+	$language['function']['actions_logs']['anty_vpn'] = " wurde für die Verwendung eines VPN bestraft.";
+	$language['function']['actions_logs']['poke_admins'] = " ging auf das hilfszentrum.";
+	$language['function']['actions_logs']['get_vip_channel'] = " [TYPE] -Kanal mit der Nummer empfangen: [NUM].";
+	$language['function']['actions_logs']['get_yt_channel'] = " erhielt einen YouTube-Kanal mit der Nummer: [NUM].";
+	$language['function']['actions_logs']['nicks_security']['nick'] = " wurde für einen falschen Spitznamen bestraft:.";
+	$language['function']['actions_logs']['nicks_security']['away'] = " wurde für unangemessene AFK-Nachricht bestraft.";
+	$language['function']['actions_logs']['nicks_security']['desc'] = " wurde für unangemessene Kundenbeschreibung bestraft.";
+	$language['function']['actions_logs']['wrong_nick'] = "keine keine ahnung";
+	$language['function']['actions_logs']['levels'] = " wurde zum LVL befördert: [LVL].";
+	$language['function']['actions_logs']['random_group'] = " Er zeichnete eine VIP-Gruppe.";
+	$language['function']['actions_logs']['get_private_channel'] = " erhielt eine private Kanalnummer: [NUM].";
+	$language['function']['actions_logs']['channels_guard'] = "Datum des privaten Kanals: [NUM] wurde aktualisiert.";
+	
+	$language['function']['weather']['weather'] = "Wetter";
+	$language['function']['weather']['temperature'] = "Temperatur";
+	$language['function']['weather']['status'] = "Wetterlage";
+	$language['function']['weather']['speed'] = "Windgeschwindigkeit";
+	$language['function']['weather']['pressure'] = "Druck";
+	$language['function']['weather']['humidity'] = "Feuchtigkeit";
+	$language['function']['weather']['visibility'] = "Sichtweite";
+	
+	$language['function']['check_ip'] = "Limit [NUMBER] Konten auf einer IP überschritten!";
+	
+	$language['function']['AutoSpeak_info']['instances_info'] = "instanz info";
+	$language['function']['AutoSpeak_info']['instance'] = "Instanz";
+	$language['function']['AutoSpeak_info']['no_info'] = "keine daten";
+	$language['function']['AutoSpeak_info']['total_ram'] = "RAM";
+	$language['function']['AutoSpeak_info']['info_from_server'] = "sevinf";
+	
+	$language['function']['check_description']['header'] = "Verdächtige Links erkannt";
+	$language['function']['check_description']['bad_link'] = "[b][color=red]Link nicht erlaubt[/color][/b]";
+	$language['function']['check_description']['bad_link_text'] = "falscher Link";
+	$language['function']['check_description']['on_channel'] = "auf dem Kanal erkannt";
+	
+	$language['function']['channels_edits']['header'] = "Aktuelle Kanalausgaben:";
+	$language['function']['channels_edits']['channel'] = "kanal:";
+	$language['function']['channels_edits']['was_edited'] = "wurde bearbeitet von:";
+	
+	$language['command']['success'] = "So viele Menschen wurden erfolgreich benachrichtigt: ";
+	$language['command']['success_moved'] = "So viele Administratoren wurden erfolgreich übertragen: ";
+	$language['command']['success_bot'] = "|Erfolg | Warten Sie einige Sekunden auf das Ergebnis!";
+	$language['command']['result'] = "Rezultat: ";
+	$language['command']['suc'] = "Erfolg!";
+	
+	$language['command']['hi'] = "Hallo [NICK]\n :)";
+
+	$language['command']['class']['not_command'] = 'Um den Befehl zu verwenden, verwenden Sie `!` Vor dem Befehl';
+	$language['command']['class']['wrong_command'] = 'Es gibt keinen solchen Befehl: ';
+	$language['command']['class']['not_privileged'] = 'Sie haben keine Berechtigung, den Befehl zu verwenden: ';
+	$language['command']['class']['bad_usage'] = 'Falsche Befehlsverwendung: ';
+	$language['command']['class']['bad_instance'] = 'Es gibt keine solche Instanz: ';
+
+	$language['command']['ch']['has_channel'] = 'Der Benutzer hat bereits einen privaten Kanal!';
+	$language['command']['ch']['success'] = 'Sie haben erfolgreich einen privaten Kanal mit der Anzahl der Unterkanäle erstellt: ';
+
+	$language['command']['mute']['success'] = 'Eine Person wurde erfolgreich eingestuft: [b] [u] [NICK] [/ u] [/ b] für die Anzahl der Sekunden: ';
+
+	$language['command']['admin']['no_admin'] = 'Diese Person hat keine Administratorgruppe!';
+	$language['command']['admin']['no_in_db'] = 'Keine angegebene Person in der Datenbank!';
+	$language['command']['admin']['info'] = '\ n ● [b] [u] Allgemeine Informationen: [/ u] [/ b] \ n \ tNick: [b] [nick] [/ b] \ n \ tClient-Datenbank-ID: [b] [dbid] [/ b] \ n \ tClient-UID: [b] [uid] [/ b] \ n \ tVerbindungen zum Server: [b] [con] [/ b] \ n \ tZeit auf dem Server verbrachte Zeit: [b] [time_spent] [ / b] \ n \ n';
+	$language['command']['admin']['info_2'] = '\n● [b][u]Zugewiesene Normale Gruppen:[/u][/b]\n\theute: [b][today][/b]\n\tDiese Woche: [b][weekly][/b]\n\tDiesen Monat: [b][monthly][/b]\n\tDie Anzahl aller zugewiesenen Gruppen: [b][total][/b]\n\n● [b][u]Zugewiesene Registrierungsgruppen:[/u][/b]\n\theute: [b][reg_today][/b]\n\tDiese Woche: [b][reg_weekly][/b]\n\tDiesen Monat: [b][reg_monthly][/b]\n\tDie Anzahl aller zugewiesenen Gruppen: [b][reg_total][/b]\n\n● [b][u]Zeitaufwand:[/u][/b] \n\theute: [color=green][b][today_time][/b][/color] w tym [color=red][b][off_today][/b][/color] als nicht verfügbar\n\tDiese Woche: [color=green][b][weekly_time][/b][/color] im dem [color=red][b][off_weekly][/b][/color] als nicht verfügbar\n\tIm laufenden Monat: [color=green][b][monthly_time][/b][/color] w tym [color=red][b][off_monthly][/b][/color] als nicht verfügbar.\n\tGesamt Zeitaufwand: [color=green][b][total_time][/b][/color] w tym [color=red][b][off_total][/b][/color] als nicht verfügbar';
+	
+	$language['command']['socialspy']['no_in_db'] = 'Keine angegebene Person in der Datenbank!';
+	$language['command']['socialspy']['info'] = '\n● [b][u]Infos:[/u][/b]\n\tNick: [b][nick][/b]\n\tClient database id: [b][dbid][/b]\n\tClient UID: [b][uid][/b]\n\tSerververbindungen: [b][con][/b]\n\tZeit auf dem Server verbracht: [b][time_spent][/b]\n\n';
+	$language['command']['socialspy']['info_2'] = '\n● [b][u]Ändern der Spitznamen des Benutzers:[/u][/b]\n';
+	$language['command']['socialspy']['change_nick'] = 'Spitzname geändert';
+
+	$language['command']['tpclient']['to_small'] = 'Spitzname zu kurz! Sie müssen mindestens 3 Zeichen eingeben!';
+	$language['command']['move']['to_small'] = 'Spitzname zu kurz! Sie müssen mindestens 3 Zeichen eingeben!';
+	$language['command']['tpclient']['not_finded'] = 'Benutzer wurde nicht gefunden.';
+	$language['command']['move']['not_finded'] = 'Benutzer wurde nicht gefunden.';
+
+	$language['command']['tpchannel']['to_small'] = 'kanalname zu kurz! Sie müssen mindestens 5 Zeichen eingeben!';
+	$language['command']['tpchannel']['not_finded'] = 'Kanal nicht gefunden.';
+
+	$language['command']['gsecurity']['wrong_group'] = 'Die angegebene Gruppe wird nicht in der Konfiguration gespeichert.';
+	$language['command']['gsecurity']['wrong_type'] = 'Ungültiger Typ, verwenden Sie "add" oder "del".';
+	$language['command']['gsecurity']['added'] = '[B] [NICK] [/ b] wurde erfolgreich zur [SGID] -Gruppe hinzugefügt [color = green] [/ color].';
+	$language['command']['gsecurity']['deleted'] = '[B] [NICK] [/ b] wurde erfolgreich [color = red] [/ color] aus der Gruppe [SGID] entfernt.';
+	$language['command']['gsecurity']['wrong_deleted'] = 'Der Benutzer [b] [NICK] [/ b] befindet sich nicht in der Cache-Datei und kann daher nicht gelöscht werden.';
+	
+	$language['command']['help']['info']['help'] = 'Listet alle Befehle auf';
+	$language['command']['help']['info']['pwall'] = 'Sendet eine private Nachricht an alle Clients';
+	$language['command']['help']['info']['pokeall'] = 'spricht alle Kunden an';
+	$language['command']['help']['info']['pwgroup'] = 'Sendet eine private Nachricht an Clients mit dem ausgewählten Serverrang';
+	$language['command']['help']['info']['pokegroup'] = 'spricht alle Kunden an mit dem ausgewählten Serverrang';
+	$language['command']['help']['info']['meeting'] = 'Übertragen Sie die Verwaltung auf den ausgewählten Kanal';
+	$language['command']['help']['info']['clients'] = 'Zeigt eine Liste aller Clients an';
+	$language['command']['help']['info']['channels'] = 'Zeigt eine Liste aller Kanäle an';
+	$language['command']['help']['info']['bot'] = 'Verwaltung von Bot-Instanzen';
+	$language['command']['help']['info']['ch'] = 'Erstellt einen privaten Kanal für den Benutzer mit der angegebenen Anzahl von Unterkanälen';
+	$language['command']['help']['info']['mute'] = 'Gibt dem Benutzer den in der Konfiguration angegebenen Rang für die angegebene Anzahl von Sekunden';
+	$language['command']['help']['info']['admin'] = 'Druckt Informationen zum angegebenen Administrator';
+	$language['command']['help']['info']['tpclient'] = 'Verschiebt Sie zu dem Benutzer mit dem angegebenen Spitznamen';
+	$language['command']['help']['info']['move'] = 'nicht fertig ;/';
+	$language['command']['help']['info']['tpchannel'] = 'Verschiebt Sie zu einem Kanal mit dem angegebenen Namen';
+	$language['command']['help']['info']['gsecurity'] = 'Sendet / nimmt eine Gruppe aus der Funktion security () der Gruppe';
+	$language['command']['help']['info']['socialspy'] = 'Druckt Informationen über den angegebenen Benutzer';
+
+	$language['command']['help']['usage']['help'] = '!help';
+	$language['command']['help']['usage']['pwall'] = '!pwall-[Botschaft]';
+	$language['command']['help']['usage']['pokeall'] = '!pokeall-[Botschaft]';
+	$language['command']['help']['usage']['pwgroup'] = '!pwgroup-[id_grupy]-[Botschaft]';
+	$language['command']['help']['usage']['pokegroup'] = '!pokegroup-[id_grupy]-[Botschaft]';
+	$language['command']['help']['usage']['meeting'] = '!meeting';
+	$language['command']['help']['usage']['clients'] = '!clients';
+	$language['command']['help']['usage']['channels'] = '!channels';
+	$language['command']['help']['usage']['bot'] = '!bot-[instanz_id]';
+	$language['command']['help']['usage']['ch'] = '!ch-[client_database_id]-[Anzahl_der_Unterkanäle]';
+	$language['command']['help']['usage']['mute'] = '!mute-[client_database_id]-[Anzahl_der_Sekunden]';
+	$language['command']['help']['usage']['admin'] = '!admin-[client_database_id]';
+	$language['command']['help']['usage']['tpclient'] = '!tpclient-[client_nick]';
+	$language['command']['help']['usage']['move'] = '!move-[client_nick]';
+	$language['command']['help']['usage']['tpchannel'] = '!tpchannel-[Kanal_Name]';
+	$language['command']['help']['usage']['gsecurity'] = '!gsecurity-[add/del]-[client_database_id]-[group_id]';
+	$language['command']['help']['usage']['socialspy'] = '!socialspy-[client_database_id]';
+
+	$language['command']['help']['privileged'] = 'können verwenden: ';
+	$language['command']['help']['inf'] = 'Information: ';
+	$language['command']['help']['us'] = 'Verwendung: ';
+
+	$language['live_help'] = array
+	(
+		//Register
+		'not_registered' => 'LiveHelp hat festgestellt, dass Sie noch nicht registriert sind.',
+		'reg_man' => 'um sich als Mann zu registrieren',
+		'reg_woman' => 'um sich als Frau zu registrieren',
+
+		//Menu
+		'header' => "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n[b]LiveHelp[/b]\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n \n",
+		'menu' => 'um eine Liste von Befehlen anzuzeigen',
+		'add' => 'um sich einen Rang zu geben',
+		'del' => 'um sich einen Rang zu entfernen',
+		'list' => 'um eine Liste von Rängen anzuzeigen',
+		'faq' => 'um faq anzuzeigen',
+		'client_info' => 'um Informationen über Sie anzuzeigen',
+		'!admin' => 'um den admin anzurufen',
+		'registered' => 'Sie haben sich gerade registriert!',
+		'group_list' => 'Liste der Servergruppen',
+		'write' => 'Schrieb',
+		'wait_admin' => 'Sie warten auf die Hilfe des Administrators!',
+		'cancel_help' => 'um die Hilfe eines Administrators abzubrechen',	
+		'success_exit' => 'Die Admin-Hilfe wurde erfolgreich abgebrochen!',
+		'channel' => 'um einen privaten Kanal zu bekommen',
+		'help_commands' => 'Hilfe bekommen:',
+
+		//Poke admins
+		'admin_informed' => 'Der Administrator wurde bereits benachrichtigt!',
+		'admin_on_channel' => 'Der Administrator befindet sich bereits im Hilfekanal!',
+		'help_status' => 'Hilfe STATUS',
+
+		//Server Groups
+		'received_rang' => 'Sie haben gerade Ihren gewählten Rang erhalten!',
+		'del_rang' => 'Du wurdest gerade aus dem Rang entfernt!',
+		'limit' => 'Du hast den Rang-limit erreicht!',
+		'not_have' => 'Du hast keinen solchen Rang!',
+		'wrong_rang' => 'Falscher Rang!',
+		'group_number' => 'Gruppennummer',
+
+		//FAQ
+		'info' => 'Informationen über dich:',
+		'version' => 'Anwendungsversion:',
+		'country' => 'Land:',
+
+		'bot_nick' => '[NAME] | Leute in: [NUM]',
+		'wrong_command' => 'Unbekannter Befehl!',
+	);
+
+?>

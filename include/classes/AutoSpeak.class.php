@@ -124,6 +124,9 @@ class AutoSpeak_functions
 				if (file_exists('include/language_file/eng.txt')) {
 					unlink('include/language_file/eng.txt');
 				}
+				if (file_exists('include/language_file/de.txt')) {
+					unlink('include/language_file/de.txt');
+				}
 			}
 		}
 		else if ($language == 'eng') {
@@ -133,6 +136,22 @@ class AutoSpeak_functions
 
 				if (file_exists('include/language_file/pl.txt')) {
 					unlink('include/language_file/pl.txt');
+				}
+				if (file_exists('include/language_file/de.txt')) {
+					unlink('include/language_file/de.txt');
+				}
+			}
+		}
+		else if ($language == 'de') {
+			if (!file_exists('include/language_file/de.txt')) {
+				$fp = fopen('include/language_file/de.txt', 'a');
+				fclose($fp);
+
+				if (file_exists('include/language_file/pl.txt')) {
+					unlink('include/language_file/pl.txt');
+				}
+				if (file_exists('include/language_file/eng.txt')) {
+					unlink('include/language_file/eng.txt');
 				}
 			}
 		}

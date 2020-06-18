@@ -39,8 +39,8 @@ cd /opt
 #ports
 Port1="8090"
 Port2="8091"
-Port3="8091"
-Port4="8091"
+Port3="8092"
+Port4="8093"
 #end
 #dirs
 bot1="bot1"
@@ -113,7 +113,7 @@ echo '
 #the pannels are accessible trough                                                                 #
 #yourmachineip:8090                                                                                #
 #yourmachineip:8091                                                                                #
-#yourmachineip:8091                                                                                #
-#yourmachineip:8091                                                                                #
+#yourmachineip:8092                                                                                #
+#yourmachineip:8093                                                                                #
 ####################################################################################################
 '

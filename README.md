@@ -45,3 +45,4 @@ And the final sixth instance is
 live_help.php
 Basicly a talking sinusbot helper
 ----------
+trouble with configuring or installation ? contact me at <a href="mailto:bakado@eclipso.at">bakado@eclipso.at</a>

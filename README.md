@@ -45,4 +45,11 @@ And the final sixth instance is
 live_help.php
 Basicly a talking sinusbot helper
 ----------
+
+How2 Change the language
+go to include/configs
+in language.php
+replace the eng with pl or de
+
+----------
 trouble with configuring or installation ? contact me at <a href="mailto:bakado@eclipso.at">bakado@eclipso.at</a>

@@ -59,8 +59,8 @@ cp /opt/sinusbot/sinusbot.current.tar.bz2 /opt/$bot2/sinusbot.current.tar.bz2
 cp /opt/sinusbot/sinusbot.current.tar.bz2 /opt/$bot3/sinusbot.current.tar.bz2
 cp /opt/sinusbot/sinusbot.current.tar.bz2 /opt/$bot4/sinusbot.current.tar.bz2
 tar -xjf sinusbot.current.tar.bz2
-echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" > config.ini
-echo ListenHost = \"0.0.0.0\" > config.ini
+echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" >> config.ini
+echo ListenHost = \"0.0.0.0\" >> config.ini
 echo ListenPort = $Port1 >> config.ini
 echo YoutubeDLPath = \"/usr/local/bin/youtube-dl\" >> config.ini
 chmod 755 sinusbot
@@ -68,8 +68,8 @@ chmod 755 sinusbot
 #bot2
 cd /opt/$bot2
 tar -xjf sinusbot.current.tar.bz2
-echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" > config.ini
-echo ListenHost = \"0.0.0.0\" > config.ini
+echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" >> config.ini
+echo ListenHost = \"0.0.0.0\" >> config.ini
 echo ListenPort = $Port2 >> config.ini
 echo YoutubeDLPath = \"/usr/local/bin/youtube-dl\" >> config.ini
 chmod 755 sinusbot
@@ -77,8 +77,8 @@ chmod 755 sinusbot
 #bot3
 cd /opt/$bot3
 tar -xjf sinusbot.current.tar.bz2
-echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" > config.ini
-echo ListenHost = \"0.0.0.0\" > config.ini
+echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" >> config.ini
+echo ListenHost = \"0.0.0.0\" >> config.ini
 echo ListenPort = $Port3 >> config.ini
 echo YoutubeDLPath = \"/usr/local/bin/youtube-dl\" >> config.ini
 chmod 755 sinusbot
@@ -86,8 +86,8 @@ chmod 755 sinusbot
 #bot4
 cd /opt/$bot4
 tar -xjf sinusbot.current.tar.bz2
-echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" > config.ini
-echo ListenHost = \"0.0.0.0\" > config.ini
+echo TS3Path = \"/opt/sinusbot/TeamSpeak3-Client-linux_amd64/ts3client_linux_amd64\" >> config.ini
+echo ListenHost = \"0.0.0.0\" >> config.ini
 echo ListenPort = $Port4 >> config.ini
 echo YoutubeDLPath = \"/usr/local/bin/youtube-dl\" >> config.ini
 chmod 755 sinusbot

@@ -29,7 +29,7 @@ class bot
 
 		if($instance != "all" && (!is_numeric($instance) || $instance > $all_instances))
 		{		
-			$kakadu::send_to_client($info['clid'], "bad_instance", $instance);
+			$AutoSpeak::send_to_client($info['clid'], "bad_instance", $instance);
 			return;
 		}
 

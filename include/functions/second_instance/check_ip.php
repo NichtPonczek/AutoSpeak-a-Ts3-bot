@@ -12,7 +12,6 @@
 class check_ip
 {
 	private static $lang;
-	private static $lang;
 	private static $name;
 	private static $cfg;
 

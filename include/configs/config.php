@@ -702,29 +702,11 @@ $config['instance']['1']['functions'] = array
 	),
 
 	// ENG [Information on channel about twitch/youtube channel]  
-	'twitch_yt' => array
+	'yt' => array
 	(
 		'enabled' => false,
 		'info' => array
 		(
-			'twitch_enabled' => false,
-			'twitch_api_key' => 'oaocbf2zpmv6807kp9jcxkwmcjvq5a', // you can change it if you want https://www.twitch.tv/settings/connections
-			'twitch' => array
-			(
-				'izakooo' => array	//Twitch channel name
-				(
-					'main_channel' => array		//Channel where will be description
-					(
-						'channel_id' => 23,
-						'channel_name' => '» [Twitch] izakooo [STATUS_TWITCH]',	//[STATUS_TWITCH] - on live or no
-					),
-					'follows' => array 	//Channel where will be followers count in channel name
-					(
-						'channel_id' => 464,
-						'channel_name' => '» Followersów: [FOLLOWS]',	//[FOLLOWS] - FOLLOWS count
-					),
-				),
-			),
 			'youtube_enabled' => true,
 			'youtube_api_key' => 'AIzaSyCetrt_hBJxA703e2PZXlgUB9tlAwDC3Os',
 			'youtube' => array
@@ -772,7 +754,7 @@ $config['instance']['1']['functions'] = array
 				),
 			),
 		),
-		'time_interval' => array('weeks' => 0,'days' => 0,'hours' => 0,'minutes' => 7,'seconds' => 0),
+		'time_interval' => array('weeks' => 0,'days' => 1,'hours' => 0,'minutes' => 0,'seconds' => 0),
 	),
 
 	// ENG [clients online from server group] 

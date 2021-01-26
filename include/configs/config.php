@@ -702,7 +702,7 @@ $config['instance']['1']['functions'] = array
 	),
 
 	// ENG [Information on channel about twitch/youtube channel]  
-	'yt' => array
+	'twitch_yt' => array
 	(
 		'enabled' => false,
 		'info' => array
